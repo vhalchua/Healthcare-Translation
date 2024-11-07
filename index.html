@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Translation Web App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Healthcare Translation Web App with Generative AI</h1>
+    <div id="controls">
+      <button id="start-record-btn">Start Recording</button>
+      <select id="source-language">
+        <option value="fil">Tagalog</option>
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="ja">Japanese</option>
+        <option value="es">Spanish</option>
+      </select>
+      <select id="target-language">
+        <option value="en">English</option>
+        <option value="fil">Tagalog</option>
+        <option value="hi">Hindi</option>
+        <option value="ja">Japanese</option>
+        <option value="es">Spanish</option>
+      </select>
+    </div>
+    <div id="transcripts">
+      <div id="original-text">Original: <span id="original-transcript"></span></div>
+      <div id="translated-text">Translated: <span id="translated-transcript"></span></div>
+    </div>
+    <button id="speak-btn">Speak Translation</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
